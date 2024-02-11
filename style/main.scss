@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+$mobile-breakpoint: 375px;
+$desktop-breakpoint: 1440px;
+
+$box-gap: 20px;
+
+$primary-intro-sign-up: hsl(217, 28%, 15%);
+$primary-main: hsl(218, 28%, 13%);
+$primary-footer: hsl(216, 53%, 9%);
+$primary-testimonials: hsl(219, 30%, 18%);
+
+// For the cta gradient
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(216, 53%, 9%);
+// For the error
+$light-red: hsl(0, 100%, 63%);
+
+$white: #fff;
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 100vh;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: $white;
+	background-color: $primary-main;
+}
+
+a {
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+
+	padding: 24px;
+	background-color: $primary-main;
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		ul {
+			display: flex;
+			gap: 20px;
+			li {
+				list-style: none;
+				a {
+					text-decoration: none;
+					color: $white;
+					cursor: pointer;
+				}
+			}
+		}
+		img {
+			height: 28px;
+		}
+	}
+}
