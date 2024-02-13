@@ -24,6 +24,17 @@ body {
 
 a {
   font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: $white;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  scroll-margin-top: $scroll-margin;
 }
 
 header {
@@ -40,14 +51,6 @@ header {
     ul {
       display: flex;
       gap: 20px;
-      li {
-        list-style: none;
-        a {
-          text-decoration: none;
-          color: $white;
-          cursor: pointer;
-        }
-      }
     }
     a,
     img {
@@ -56,8 +59,41 @@ header {
   }
 }
 
-section {
-  scroll-margin-top: $scroll-margin;
+footer {
+  padding-inline: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  padding-bottom: 40px;
+  section {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        letter-spacing: 0.2px;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border: 1px solid $white;
+    border-radius: 50%;
+  }
 }
 
 @import "desktop";
