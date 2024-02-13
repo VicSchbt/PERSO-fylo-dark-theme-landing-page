@@ -1,0 +1,21 @@
+$mobile-breakpoint: 375px;
+$desktop-breakpoint: 1440px;
+
+$box-gap: 20px;
+$header-padding: 24px;
+$header-height: 28px;
+
+$scroll-margin: calc($header-height + 2 * $header-padding);
+
+$primary-intro-sign-up: hsl(217, 28%, 15%);
+$primary-main: #181f2a;
+$primary-footer: hsl(216, 53%, 9%);
+$primary-testimonials: hsl(219, 30%, 18%);
+
+// For the cta gradient
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(216, 53%, 9%);
+// For the error
+$light-red: hsl(0, 100%, 63%);
+
+$white: #fff;
