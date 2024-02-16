@@ -1,0 +1,28 @@
+@import "config";
+
+#sign-in {
+  background-color: $primary-testimonials;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  p {
+    text-align: center;
+  }
+  label {
+    display: none;
+  }
+  input {
+    width: $input-width;
+    padding: 16px;
+    font-size: 10px;
+    border: none;
+    border-radius: 50px;
+    &::placeholder {
+      color: #c0c0c0;
+    }
+  }
+}

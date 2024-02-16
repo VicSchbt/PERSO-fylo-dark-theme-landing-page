@@ -1,13 +1,14 @@
 @import "config";
 
 button {
+  width: $button-width;
   color: $white;
   background-color: $cyan;
-  background: linear-gradient(0.25turn, $cyan, $blue);
+  background: linear-gradient(0.37turn, $cyan, $blue);
   border: none;
   border-radius: 50px;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-family: $raleway;
+  font-size: 14px;
   font-weight: 700;
-  padding: 8px 52px;
+  padding: 16px;
 }

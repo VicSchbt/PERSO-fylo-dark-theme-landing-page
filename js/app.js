@@ -9,8 +9,11 @@ team.forEach((el) => {
           <p>
             ${el.testimonial}
           </p>
+          <div class="person">
+          <img src="${el.pp}" alt="" />
           <p>${el.name}</p>
           <p>${el.title}</p>
+          </div>
         </article>`;
 });
 
