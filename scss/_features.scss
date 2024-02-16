@@ -1,0 +1,17 @@
+#features {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    p {
+      text-align: center;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}

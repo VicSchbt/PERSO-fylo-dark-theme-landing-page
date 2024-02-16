@@ -1,0 +1,15 @@
+@import "config";
+
+.productive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  h2 {
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }
+}

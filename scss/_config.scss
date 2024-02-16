@@ -3,7 +3,7 @@ $desktop-breakpoint: 1440px;
 
 $box-gap: 20px;
 $header-padding: 24px;
-$header-height: 28px;
+$header-height: 24px;
 
 $scroll-margin: calc($header-height + 2 * $header-padding);
 
@@ -19,3 +19,5 @@ $blue: hsl(216, 53%, 9%);
 $light-red: hsl(0, 100%, 63%);
 
 $white: #fff;
+
+$raleway: "Raleway", sans-serif;

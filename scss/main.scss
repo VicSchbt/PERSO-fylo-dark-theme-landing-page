@@ -1,4 +1,8 @@
 @import "config";
+@import "hero";
+@import "button";
+@import "features";
+@import "productive";
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
 
@@ -22,6 +26,13 @@ body {
   background-color: $primary-main;
 }
 
+h2 {
+  font-family: $raleway;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 a {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
@@ -37,6 +48,13 @@ section {
   scroll-margin-top: $scroll-margin;
 }
 
+main {
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -50,11 +68,13 @@ header {
     align-items: center;
     ul {
       display: flex;
-      gap: 20px;
+      gap: 24px;
     }
     a,
     img {
       height: $header-height;
+      font-family: $raleway;
+      font-size: 12px;
     }
   }
 }
@@ -74,8 +94,10 @@ footer {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        letter-spacing: 0.2px;
-        gap: 20px;
+        gap: 16px;
+        img {
+          padding-top: 2px;
+        }
       }
     }
   }
