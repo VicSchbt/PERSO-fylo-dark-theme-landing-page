@@ -1,6 +1,6 @@
 #features {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 80px;
   article {
     display: flex;
@@ -8,6 +8,9 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    h2 {
+      text-align: center;
+    }
     p {
       text-align: center;
       font-size: 14px;

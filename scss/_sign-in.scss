@@ -4,10 +4,9 @@
   background-color: $primary-testimonials;
   border-radius: 8px;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   gap: 16px;
   p {
     text-align: center;

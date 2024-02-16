@@ -4,11 +4,13 @@
   flex-direction: column;
   gap: 24px;
   #quotes {
+    z-index: 2;
     width: 28px;
     position: absolute;
     top: -20px;
   }
   article {
+    z-index: 5;
     padding: 20px;
     display: flex;
     flex-direction: column;

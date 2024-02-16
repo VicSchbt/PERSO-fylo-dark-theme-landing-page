@@ -1,0 +1,113 @@
+@import "config";
+
+@media screen and (min-width: 640px) {
+  body {
+    font: 16px;
+  }
+
+  header {
+    nav {
+      ul {
+        gap: 36px;
+      }
+      a,
+      img {
+        height: 52px;
+      }
+    }
+  }
+
+  #hero {
+    width: 70%;
+    margin: auto;
+    gap: 24px;
+    h1 {
+      font-size: 40px;
+      line-height: 60px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  #features {
+    width: 70%;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .productive {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    h2 {
+      text-align: left;
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+
+  #team {
+    flex-direction: row;
+  }
+
+  #sign-in {
+    width: 70%;
+    margin: auto;
+    padding-inline: 32px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "title title" "descr descr" "input btn";
+    h2 {
+      grid-area: title;
+    }
+    p {
+      grid-area: descr;
+    }
+    input {
+      width: 100%;
+      grid-area: input;
+    }
+    button {
+      grid-area: btn;
+    }
+  }
+
+  footer {
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    grid-template-areas: "img img img img" "info link1 link2 social";
+    img {
+      grid-area: img;
+    }
+    section {
+      &:nth-child(2) {
+        grid-area: info;
+        ul {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          gap: 20px;
+          grid-template-areas: "loc phone" "loc mail";
+          li {
+            &:nth-child(1) {
+              grid-area: loc;
+            }
+            &:nth-child(2) {
+              grid-area: phone;
+            }
+            &:nth-child(3) {
+              grid-area: mail;
+            }
+          }
+        }
+      }
+      &:nth-child(3) {
+        grid-area: link1;
+      }
+      &:nth-child(4) {
+        grid-area: link2;
+      }
+      &:nth-child(5) {
+        grid-area: social;
+      }
+    }
+  }
+}
