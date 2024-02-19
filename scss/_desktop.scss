@@ -6,6 +6,7 @@
   }
 
   header {
+    padding: 40px 80px;
     nav {
       ul {
         gap: 36px;
@@ -56,7 +57,7 @@
     margin: auto;
     padding-inline: 32px;
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: "title title" "descr descr" "input btn";
+    grid-template-areas: "title title" "descr descr" "input btn" "error error";
     h2 {
       grid-area: title;
     }
@@ -69,6 +70,9 @@
     }
     button {
       grid-area: btn;
+    }
+    #error-message {
+      grid-area: error;
     }
   }
 

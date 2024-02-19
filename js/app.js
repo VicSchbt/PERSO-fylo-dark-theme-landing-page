@@ -27,3 +27,31 @@ features.forEach((el) => {
           </p>
         </article>`;
 });
+
+// EMAIL VALIDATION
+
+const emailSubmitBtn = document.getElementById("emailSubmitBtn");
+const emailInput = document.getElementById("email");
+const errorMessage = document.getElementById("error-message");
+
+/**
+ *
+ * @param {string} text
+ * @returns boolean
+ */
+const isEmailAddr = (text) => {
+  const re =
+    /(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/;
+  return re.test(text);
+};
+
+const onSubmitEmailClicked = (e) => {
+  e.preventDefault();
+  if (isEmailAddr(emailInput.value)) {
+    console.log("GOOD FORMAT");
+  } else {
+    errorMessage.classList.remove("hide");
+  }
+};
+
+emailSubmitBtn.addEventListener("click", onSubmitEmailClicked);

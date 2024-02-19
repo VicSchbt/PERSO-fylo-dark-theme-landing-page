@@ -59,7 +59,13 @@
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required.
           </p>
-          <a href="#"> See how Fylo works </a>
+          <div class="see-how-link">
+            <a href="#">
+              See how Fylo works
+              <img class="default" src="/images/icon-arrow.svg" alt="" />
+              <img class="hover" src="/images/icon-arrow-white.svg" alt="" />
+            </a>
+          </div>
         </section>
       </section>
       <section id="team">
@@ -74,7 +80,10 @@
         </p>
         <label for="email">Email</label>
         <input type="text" id="email" placeholder="email@example.com" />
-        <button>Get Started For Free</button>
+        <button id="emailSubmitBtn">Get Started For Free</button>
+        <span id="error-message" class="hide"
+          >Error, please check your email</span
+        >
       </form>
     </main>
 

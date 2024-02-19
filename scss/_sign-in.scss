@@ -1,6 +1,7 @@
 @import "config";
 
 #sign-in {
+  position: relative;
   background-color: $primary-testimonials;
   border-radius: 8px;
   padding: 20px;
@@ -16,7 +17,7 @@
   }
   input {
     width: $input-width;
-    padding: 16px;
+    padding: 16px 36px;
     font-size: 10px;
     border: none;
     border-radius: 50px;
@@ -24,4 +25,17 @@
       color: #c0c0c0;
     }
   }
+}
+
+#error-message {
+  position: absolute;
+  color: red;
+  justify-self: start;
+  padding-left: 36px;
+  margin-top: -12px;
+  font-size: 10px;
+}
+
+.hide {
+  display: none;
 }
