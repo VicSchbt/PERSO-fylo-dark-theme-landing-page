@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [link](https://your-solution-url.com)
+- Solution URL: [link]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/fylo-dark-landing-page-vanilla-js-scss-MIPF25AR4y))
 - Live Site URL: [link](https://vicschbt.github.io/PERSO-fylo-dark-theme-landing-page/)
 
 ## My process
