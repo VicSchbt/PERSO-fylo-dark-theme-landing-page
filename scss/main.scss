@@ -56,7 +56,7 @@ section {
 }
 
 main {
-  padding: 36px;
+  padding: $main-padding $main-padding 0;
   display: flex;
   flex-direction: column;
   gap: 160px;

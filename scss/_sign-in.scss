@@ -1,5 +1,14 @@
 @import "config";
 
+.sign-in-bg {
+  width: calc(100% + 2 * $main-padding);
+  position: relative;
+  left: calc(-1 * $main-padding);
+  padding: 0 $main-padding $main-padding;
+  background: $primary-main;
+  background: linear-gradient(180deg, $primary-main 50%, $primary-footer 50%);
+}
+
 #sign-in {
   position: relative;
   background-color: $primary-testimonials;
